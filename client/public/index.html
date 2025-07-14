@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="RJ45 Kabel Inventar-Manager - Mobile Inventarisierung mit QR-Codes" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- PWA Meta Tags für bessere mobile Erfahrung -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="RJ45 Inventory">
+    
+    <!-- Roboto Font für Material-UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <title>RJ45 Inventar-Manager</title>
+    
+    <style>
+      /* Verhindert Zoom bei Input-Focus auf iOS */
+      input[type="text"], 
+      input[type="password"], 
+      input[type="email"], 
+      input[type="number"], 
+      textarea, 
+      select {
+        font-size: 16px !important;
+      }
+      
+      /* Basis-Styles für mobile Optimierung */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #f5f5f5;
+        overflow-x: hidden;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Deaktiviert Text-Selektion für bessere mobile UX */
+      .no-select {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      Sie müssen JavaScript aktivieren, um diese App ausführen zu können.
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html> 
